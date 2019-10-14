@@ -16,9 +16,7 @@ function CounterEnhancement() {
   };
 
   const handleReset = () => {
-    setCount(() => {
-      return 0;
-    });
+    setCount(0);
   };
 
   return (
