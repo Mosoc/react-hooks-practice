@@ -1,24 +1,33 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-function App(){
+function App() {
   const [activated, setActivated] = useState(false);
-  const buttonText = activated ? 'Active': 'Inactive';
+  const buttonText = activated ? 'Active' : 'Inactive';
   function handleClick() {
-    setActivated(!activated)
+    setActivated(!activated);
   }
   return (
     <React.Fragment>
-      <label>Use an arrow function in props</label>
-      <button onClick={()=>{setActivated(!activated)}} >
-        {buttonText}
-      </button>
-      <label>Use predefined function</label>
-      <button onClick={handleClick} >
-        {buttonText}
-      </button>
+      <h1>Hook Practice</h1>
+      <h2>useState</h2>
+      <section>
+        <div>
+          <label>Use an arrow function in props:</label>
+          <button
+            onClick={() => {
+              setActivated(!activated);
+            }}
+          >
+            {buttonText}
+          </button>
+        </div>
+        <div>
+          <label>Use predefined function: </label>
+          <button onClick={handleClick}>{buttonText}</button>
+        </div>
+      </section>
     </React.Fragment>
-  )
+  );
 }
-
 
 export default App;
