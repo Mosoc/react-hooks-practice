@@ -9,8 +9,8 @@ function App() {
   return (
     <React.Fragment>
       <h1>Hooks Practice</h1>
-      <h2>useState</h2>
       <section>
+        <h2>useState</h2>
         <div>
           <label>Use an arrow function in props:</label>
           <button
