@@ -36,7 +36,9 @@ function CountyAndCity() {
           value={state.country}
           onChange={handleCountryChange}
         />
-        <div>You live in {`${state.city}, ${state.country}`}</div>
+        <div>
+          <p>You live in {`${state.city}, ${state.country}`}</p>
+        </div>
       </form>
     </section>
   );
