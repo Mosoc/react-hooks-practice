@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 class CounterClass extends React.Component {
   constructor(props) {
@@ -28,4 +28,20 @@ class CounterClass extends React.Component {
   }
 }
 
-export default CounterClass;
+function CounterFunction() {
+  const [count, setCount] = useState(0);
+  const handleClick = () => {
+    setCount(prevCount => {
+      return prevCount + 1;
+    });
+  };
+  return (
+    <section>
+      <h2>Counter</h2>
+      <button onClick={handleClick}>Increase</button>
+      <p>{count}</p>
+    </section>
+  );
+}
+
+export default CounterFunction;
