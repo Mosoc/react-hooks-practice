@@ -1,7 +1,8 @@
 import React from 'react';
 import AsBoolean from './UseState/AsBoolean';
 import Counter from './UseState/Counter';
-import CounterEnhancement from './UseState/CounterEnhancement'
+import CounterEnhancement from './UseState/CounterEnhancement';
+import CountryAndCity from './UseState/CountryAndCity';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
       <AsBoolean />
       <Counter />
       <CounterEnhancement />
+      <CountryAndCity />
     </div>
   );
 }
