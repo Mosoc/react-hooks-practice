@@ -8,7 +8,7 @@ function App() {
   }
   return (
     <React.Fragment>
-      <h1>Hook Practice</h1>
+      <h1>Hooks Practice</h1>
       <h2>useState</h2>
       <section>
         <div>
