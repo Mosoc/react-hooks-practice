@@ -20,7 +20,7 @@ class CounterClass extends React.Component {
   render() {
     return (
       <section>
-        <h2>Counter</h2>
+        <h3>Class Counter</h3>
         <button onClick={this.handleClick}>Increase</button>
         <p>{this.state.count}</p>
       </section>
@@ -36,12 +36,18 @@ function CounterFunction() {
     });
   };
   return (
-    <section>
-      <h2>Counter</h2>
+    <div>
+      <h3>Function Counter with useState hook</h3>
       <button onClick={handleClick}>Increase</button>
       <p>{count}</p>
-    </section>
+    </div>
   );
 }
 
-export default CounterFunction;
+export default () => (
+  <section>
+    <h2>Compare Class with Hook</h2>
+    <CounterClass />
+    <CounterFunction />
+  </section>
+);
