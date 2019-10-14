@@ -1,6 +1,8 @@
 import React from 'react';
 import AsBoolean from './UseState/AsBoolean';
 import Counter from './UseState/Counter';
+import CounterEnhancement from './UseState/CounterEnhancement'
+
 import './App.css';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <h1>Hooks Practice</h1>
       <AsBoolean />
       <Counter />
+      <CounterEnhancement />
     </div>
   );
 }
