@@ -21,7 +21,8 @@ function CounterEnhancement() {
 
   return (
     <section>
-      <h2>Full counter</h2>
+      <h2>Multiple Click Handlers</h2>
+      <h3>Full counter</h3>
       <button onClick={handleIncrease}>Increase</button>
       <button onClick={handleDecrease}>Decrease</button>
       <button onClick={handleReset}>Reset</button>
