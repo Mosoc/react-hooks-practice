@@ -8,12 +8,14 @@ function CountyAndCity() {
 
   function handleCityChange(event) {
     setState({
+      ...state,
       city: event.target.value
     });
   }
 
   function handleCountryChange(event) {
     setState({
+      ...state,
       country: event.target.value
     });
   }
