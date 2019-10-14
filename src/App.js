@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import AsBoolean from './UseState/AsBoolean'
+import AsBoolean from './UseState/AsBoolean';
+import './App.css';
 
 function App() {
   const [activated, setActivated] = useState(false);
@@ -8,10 +9,10 @@ function App() {
     setActivated(!activated);
   }
   return (
-    <React.Fragment>
+    <div className="container">
       <h1>Hooks Practice</h1>
       <AsBoolean />
-    </React.Fragment>
+    </div>
   );
 }
 
