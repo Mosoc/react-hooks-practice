@@ -15,11 +15,18 @@ function CounterEnhancement() {
     });
   };
 
+  const handleReset = () => {
+    setCount(() => {
+      return 0;
+    });
+  };
+
   return (
     <section>
       <h2>Full counter</h2>
       <button onClick={handleIncrease}>Increase</button>
       <button onClick={handleDecrease}>Decrease</button>
+      <button onClick={handleReset}>Reset</button>
       <p>{count}</p>
     </section>
   );
